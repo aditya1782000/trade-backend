@@ -1,0 +1,20 @@
+<%- include('../partials/header.ejs')%>
+<div class=" d-flex align-items-center justify-content-center">
+    <div class="row">
+        <div class="col-lg mb-4">
+            <div class="card card-style">
+            <img  src="<%= item.image%>" height="200" width="200" alt="Logo">
+        <h4 class="card-title"><%= item.title%></h4>
+        <p><%= item.content%></p>
+        <h4 class="card-title"><%= item.status%></h4>
+        <%if(user == item.author._id) {%>
+        <form>
+            <button type="submit" formmethod="GET" formaction="/items/<%= item.id%>/edit">Edit</button>
+            <button type="submit" formmethod="POST" formaction="/items/<%= item.id%>?_method=DELETE">Delete</button>
+        </form>
+        <%} %>
+    </div>
+</div>
+</div>
+</div>
+    <%- include('../partials/footer.ejs')%>  

@@ -1,0 +1,32 @@
+<%- include('../partials/header.ejs')%>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card card-style">
+            
+                <div class="card-body">
+        <% if(categories.length){ %>
+            <% categories.forEach(category => { %>
+            <div class="listing">
+                <h3><%= category %></h3>
+                <ul class="list-group list-group-flush">
+                    <% if(items.length){ %>
+                        <% items.forEach(item => { 
+                            if (item.category === category) { %>
+                                <li class="list-group-item"><a class="a-ctg" href="/items/<%= item.id %>"><%= item.title %></a></li>
+                            <% } });
+                        } else { %>
+                            <p>There are no Items to display.</p>
+                    <% } %>
+                        </ul>
+            </div>
+            <% }); %>
+        <% } else { %>
+            <p>There are no categories to display.</p>
+        <% } %>
+    </div>
+</div>
+</div>
+</div>
+</div>
+    <%- include('../partials/footer.ejs')%>  

@@ -1,0 +1,108 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background:#005035;
+}
+.navbar-trade{
+  background:#005035;
+  margin-top: 0.05ch;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.content {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.content a{
+text-decoration: none;
+color: grey;
+}
+
+footer {
+  color: white;
+  background-color: #005035;;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#item{
+width: 50%;
+padding-top: 20px;
+padding-bottom: 20px
+}
+
+label{
+font-size: small;
+}
+
+td{
+padding-right: 10px;
+padding-bottom: 10px;
+}
+
+.align-top{
+vertical-align: top;
+}
+
+.align-right{
+text-align: right;
+}
+
+.fixed-width{
+width: 300px;
+}
+
+input, textarea{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.description h1 {
+	color: #6ab446;
+}
+.description p {
+	color:black;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+a:link{
+    color: white;
+}
+
+.a-ctg:link {
+  color: black;
+}
+
+.card-style {
+  width: 18rem;
+}
+.row-top {
+   margin-top: 10%;
+}
